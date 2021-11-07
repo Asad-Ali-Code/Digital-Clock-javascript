@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #283c86;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #283c86, #19471a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #283c86, #19471a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+}
+.text{
+  margin: 20px ;
+}
+.H1{
+  font-size: 90px;
+  font-family: "Segoe UI", sans-serif;
+  animation: change 3s step-end both;
+  background: -webkit-linear-gradient(#eee, rgb(100, 92, 92));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.H1:hover{
+  /* background: #155799; */
+  background: -webkit-linear-gradient(#159957, #155799);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.datetime{
+  color: #fff;
+  /* background: #093028; */
+  background: #159957;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  font-family: "Segoe UI", sans-serif;
+  width: 340px;
+  padding: 15px 10px;
+  border: 3px solid #e0effa;
+  border-radius: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+  transition: 0.5s;
+  transition-property: background, box-shadow;
+}
+
+.datetime:hover{
+  background: #155799;
+  box-shadow: 0 0 30px #159957 ;
+}
+
+.date{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time{
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time span:not(:last-child){
+  position: relative;
+  margin: 0 6px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time span:last-child{
+  background: #19471a;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+}
